@@ -517,10 +517,10 @@ public class LegacyProjectLoader extends AbstractProjectLoader {
 
         if (goOnline != GoOnline.ALWAYS) {
             if (settings.getDownloadSources() == GradleSettings.DownloadMiscRule.ALWAYS) {
-                //online.addProjectProperty("downloadSources", "ALL"); //NOI18N
+                online.addProjectProperty("downloadSources", "ALL"); //NOI18N
             }
             if (settings.getDownloadJavadoc() == GradleSettings.DownloadMiscRule.ALWAYS) {
-                //online.addProjectProperty("downloadJavadoc", "ALL"); //NOI18N
+                online.addProjectProperty("downloadJavadoc", "ALL"); //NOI18N
             }
             offline.addFlag(GradleCommandLine.Flag.OFFLINE);
         }

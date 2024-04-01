@@ -457,7 +457,7 @@ public final class GradleSettings {
     }
 
     public DownloadMiscRule getDownloadSources() {
-        String ruleName = getPreferences().get(PROP_DOWNLOAD_SOURCES, DownloadMiscRule.ALWAYS.name());
+        String ruleName = getPreferences().get(PROP_DOWNLOAD_SOURCES, DownloadMiscRule.NEVER.name());
         return DownloadMiscRule.valueOf(ruleName);
     }
 
